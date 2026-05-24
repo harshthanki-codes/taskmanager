@@ -3,9 +3,9 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
-const authRoutes = require('./routes/auth.routes');
-const taskRoutes = require('./routes/task.routes');
-const adminRoutes = require('./routes/admin.routes');
+const authRoutes = require('./routes/auth.routes.js');
+const taskRoutes = require('./routes/task.routes.js');
+const adminRoutes = require('./routes/admin.routes.js');
 
 const app = express();
 
