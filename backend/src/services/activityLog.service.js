@@ -1,4 +1,4 @@
-const ActivityLog = require('../models/activityLog.model');
+const ActivityLog = require('../models/activityLog.model.js');
 
 /**
  * Appends a structured entry to the activity log.
