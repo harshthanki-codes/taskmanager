@@ -22,3 +22,4 @@ const log = async ({ userId, action, detail, resourceId, resourceType, req }) =>
 };
 
 module.exports = { log };
+

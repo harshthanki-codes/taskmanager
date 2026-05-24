@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/user.model.js');
-const { log } = require('../services/activityLog.service');
+const { log } = require('../services/activityLog.service.js');
 
 const signToken = (userId) =>
   jwt.sign({ id: userId }, process.env.JWT_SECRET, {

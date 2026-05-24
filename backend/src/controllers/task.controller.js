@@ -1,5 +1,5 @@
-const Task = require('../models/task.model');
-const { log } = require('../services/activityLog.service');
+const Task = require('../models/task.model.js');
+const { log } = require('../services/activityLog.service.js');
 
 const createTask = async (req, res) => {
   try {
@@ -108,3 +108,4 @@ const deleteTask = async (req, res) => {
 };
 
 module.exports = { createTask, getMyTasks, updateTask, deleteTask };
+

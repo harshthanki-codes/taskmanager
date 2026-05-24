@@ -26,3 +26,4 @@ const requireRole = (...roles) => {
 const requireAdmin = requireRole('admin');
 
 module.exports = { requireRole, requireAdmin };
+

@@ -7,9 +7,9 @@ const {
   adminDeleteTask,
   getAnalytics,
   getActivityLogs,
-} = require('../controllers/admin.controller');
-const { verifyToken } = require('../middleware/auth.middleware');
-const { requireAdmin } = require('../middleware/role.middleware');
+} = require('../controllers/admin.controller.js');
+const { verifyToken } = require('../middleware/auth.middleware.js');
+const { requireAdmin } = require('../middleware/role.middleware.js');
 
 const router = Router();
 
@@ -32,3 +32,4 @@ router.delete('/tasks/:id', adminDeleteTask);
 router.get('/logs', getActivityLogs);
 
 module.exports = router;
+

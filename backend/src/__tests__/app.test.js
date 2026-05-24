@@ -1,8 +1,8 @@
 const request = require('supertest');
 const mongoose = require('mongoose');
-const app = require('../src/app');
-const User = require('../src/models/user.model');
-const Task = require('../src/models/task.model');
+const app = require('../src/app.js');
+const User = require('../src/models/user.model.js');
+const Task = require('../src/models/task.model.js');
 
 const TEST_DB = process.env.TEST_MONGO_URI || 'mongodb://localhost:27017/taskmanager_test';
 
@@ -193,3 +193,4 @@ describe('Admin user management', () => {
     expect(tasks.length).toBe(0);
   });
 });
+

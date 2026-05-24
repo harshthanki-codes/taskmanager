@@ -1,6 +1,6 @@
 const { Router } = require('express');
-const { createTask, getMyTasks, updateTask, deleteTask } = require('../controllers/task.controller');
-const { verifyToken } = require('../middleware/auth.middleware');
+const { createTask, getMyTasks, updateTask, deleteTask } = require('../controllers/task.controller.js');
+const { verifyToken } = require('../middleware/auth.middleware.js');
 
 const router = Router();
 
@@ -13,3 +13,4 @@ router.patch('/:id', updateTask);
 router.delete('/:id', deleteTask);
 
 module.exports = router;
+

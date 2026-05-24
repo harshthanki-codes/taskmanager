@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const User = require('../models/user.model');
+const User = require('../models/user.model.js');
 
 /**
  * Validates the Bearer JWT in the Authorization header.
@@ -36,3 +36,4 @@ const verifyToken = async (req, res, next) => {
 };
 
 module.exports = { verifyToken };
+

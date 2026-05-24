@@ -1,7 +1,7 @@
-const User = require('../models/user.model');
-const Task = require('../models/task.model');
-const ActivityLog = require('../models/activityLog.model');
-const { log } = require('../services/activityLog.service');
+const User = require('../models/user.model.js');
+const Task = require('../models/task.model.js');
+const ActivityLog = require('../models/activityLog.model.js');
+const { log } = require('../services/activityLog.service.js');
 
 // ── Users ──────────────────────────────────────────────────────────────────
 
@@ -215,3 +215,4 @@ module.exports = {
   getAnalytics,
   getActivityLogs,
 };
+
